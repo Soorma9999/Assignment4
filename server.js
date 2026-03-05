@@ -8,15 +8,16 @@ Student ID: 110922259
 Date: March 4,2026
 **********************************************************************************/
 
-const express = require("express");
+const express = require('express');
+const path = require('path');
+
 const app = express();
+const PORT = process.env.PORT || 8080;
 
-const HTTP_PORT = process.env.PORT || 8080;
-
-// Serve static files from "public"
-app.use(express.static("public"));
+// Serve all files in public folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Start server
-app.listen(HTTP_PORT, () => {
-  console.log(`Server listening on port ${HTTP_PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
