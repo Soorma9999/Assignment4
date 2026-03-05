@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML & CSS Fundamentals</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+
+<header>
+    <h1>HTML & CSS Fundamentals</h1>
+    <p>Learning HTML5 structure and CSS3 styling</p>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li>
+                <a href="https://developer.mozilla.org"
+                   target="_blank"
+                   rel="noopener noreferrer">External Link</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About This Page</h2>
+        <p>
+            This page demonstrates semantic HTML5 elements such as
+            &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, and &lt;footer&gt;.
+        </p>
+        <p>
+            It also shows how to use special characters like
+            &lt;, &gt;, &amp;, and &copy; correctly in HTML.
+        </p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Toronto_sign.jpg"
+             alt="Toronto Sign"
+             width="400">
+    </section>
+
+    <!-- TOPICS -->
+    <section id="topics">
+        <h2>Topics Covered</h2>
+
+        <ol>
+            <li>
+                HTML Basics
+                <ul>
+                    <li>Elements</li>
+                    <li>Attributes</li>
+                    <li>Entities</li>
+                </ul>
+            </li>
+            <li>CSS Selectors</li>
+            <li>Box Model</li>
+        </ol>
+
+        <div class="highlight-box">
+            <h3>Inline vs Block</h3>
+            <p>
+                Inline elements do not start on a new line and only take up as much width as necessary.
+                Block elements start on a new line and take up the full width available.
+            </p>
+        </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule">
+        <h2>Weekly Course Schedule</h2>
+
+        <table>
+            <caption>WEB Course Schedule</caption>
+
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                    <th>Lab</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>HTML Basics</td>
+                    <td>Lab 1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>CSS Fundamentals</td>
+                    <td>Lab 2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Box Model & Layout</td>
+                    <td>Lab 3</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Total Hours</strong></td>
+                    <td><strong>9</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- MULTIMEDIA -->
+    <section id="media">
+        <h2>Multimedia</h2>
+
+        <h3>Audio Example</h3>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Example</h3>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 HTML & CSS Demo</p>
+</footer>
+
+</body>
+</html>
